@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC-Builder</title>
+    <link rel="stylesheet" href="info.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="JS.JS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <script>
+    function pcdetail(evt, pcdetail) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pcdetail).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+<body class="body">
+  <style>
+    body{
+      background-image: url();
+    }
+  </style>
+  <div class="tab">
+    <button class="main" onclick="document.location='index.html'">PC-Builder</button>
+    <button class="tablinks" onclick="pcdetail(event, 'MotherBoard')">MotherBoard</button>
+    <button class="tablinks" onclick="pcdetail(event, 'CPU')">CPU</button>
+    <button class="tablinks" onclick="pcdetail(event, 'GPU')">GPU</button>
+    <button class="tablinks" onclick="pcdetail(event, 'PSU')">PSU</button>
+    <button class="tablinks" onclick="pcdetail(event, 'RAM')">RAM</button>
+    <button class="tablinks" onclick="pcdetail(event, 'HDD')">HDD</button>
+    <button class="tablinks" onclick="pcdetail(event, 'SSD')">SSD</button>
+    <button class="tablinks" onclick="pcdetail(event, 'COOL')">Cooling Air/Water</button>
+    <button class="tablinks" onclick="pcdetail(event, 'FAN')">FAN's</button>
+    <button class="tablinks" onclick="pcdetail(event, 'CHASSI')">Chassi</button>
+    <button class="main2" onclick="pcdetail(event, 'LINKS')">Helpfull Links</button>
+  </div>
+  
+  <div id="MotherBoard" class="tabcontent">
+    <img class="imgmb" src="mb.jpg" alt="">
+    <p class="mbp">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems. It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit (CPU) and memory, and provides connectors for other peripherals. Unlike a backplane, a motherboard usually contains significant sub-systems, such as the central processor, the chipset's input/output and memory controllers, interface connectors, and other components integrated for general use.</p>
+  </div>
+
+  <div id="CPU" class="tabcontent">
+    <img class="imgdetail" src="cpu.jpg" alt="">
+    <p class="p">A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry, and specialized processors such as graphics processing units (GPUs).</p>
+  </div>
+  
+  <div id="GPU" class="tabcontent">
+    <img class="imgdetail" src="gpu.jpg" alt="">
+    <p class="p">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device. GPUs are used in embedded systems, mobile phones, personal computers, workstations, and game consoles.</p> 
+  </div>
+
+  <div id="PSU" class="tabcontent">
+    <img class="imgdetail" src="PSU.jpg" alt="">
+    <p class="p">A power supply unit (PSU) converts mains AC to low-voltage regulated DC power for the internal components of a computer. Modern personal computers universally use switched-mode power supplies. Some power supplies have a manual switch for selecting input voltage, while others automatically adapt to the mains voltage.</p>
+  </div>
+
+  <div id="RAM" class="tabcontent">
+    <img class="imgdetail" src="ram.jpg" alt="">
+    <p class="p">Random-access memory (RAM) is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory, in contrast with other direct-access data storage media, where the time required to read and write data items varies significantly depending on their physical locations on the recording medium, due to mechanical limitations such as media rotation speeds and arm movemen</p>
+  </div>
+
+  <div id="HDD" class="tabcontent">
+    <img class="imgdetail" src="hdd.jpg" alt="">
+    <p class="p">A hard disk drive (HDD), hard disk, hard drive, or fixed disk is an electro-mechanical data storage device that stores and retrieves digital data using magnetic storage and one or more rigid rapidly rotating platters coated with magnetic material. The platters are paired with magnetic heads, usually arranged on a moving actuator arm, which read and write data to the platter surfaces. Data is accessed in a random-access manner, meaning that individual blocks of data can be stored and retrieved in any order. HDDs are a type of non-volatile storage, retaining stored data even when powered off. Modern HDDs are typically in the form of a small rectangular box.</p>
+  </div>
+
+  <div id="SSD" class="tabcontent">
+    <img class="imgdetail" src="ssd.jpg" alt="">
+    <p class="p">A solid-state drive (SSD) is a solid-state storage device that uses integrated circuit assemblies to store data persistently, typically using flash memory, and functioning as secondary storage in the hierarchy of computer storage. It is also sometimes called a semiconductor storage device, a solid-state device or a solid-state disk, even though SSDs lack the physical spinning disks and movable read-write heads used in hard disk drives (HDDs) and floppy disks.</p>
+  </div>
+
+  <div id="COOL" class="tabcontent">
+    <img class="imgfans" src="cool.jpg" alt="">
+    <p class="fansP">Computer cooling is required to remove the waste heat produced by computer components, to keep components within permissible operating temperature limits. Components that are susceptible to temporary malfunction or permanent failure if overheated include integrated circuits such as central processing units (CPUs), chipsets, graphics cards, and hard disk drives.</p>
+  </div>
+
+  <div id="FAN" class="tabcontent">
+    <img class="imgfans" src="fans.jpg" alt="">
+    <p class="fansP">A computer fan is any fan inside, or attached to, a computer case used for active cooling. Fans are used to draw cooler air into the case from the outside, expel warm air from inside and move air across a heat sink to cool a particular component. Both axial and sometimes centrifugal (blower/squirrel-cage) fans are used in computers. Computer fans commonly come in standard sizes, such as 120 mm (most common), 140 mm, 240 mm, and even 360 mm. Computer fans are powered and controlled using 3-pin or 4-pin fan connectors.</p>
+  </div>
+  <div id="CHASSI" class="tabcontent">
+    <img class="imgchassi" src="chassi.jpg" alt="">
+    <p class="chassiP">A computer case, also known as a computer chassis, tower, system unit, or cabinet, is the enclosure that contains most of the components of a personal computer (usually excluding the display, keyboard, and mouse).</p>
+  </div>
+  <div id="LINKS" class="tabcontent">
+    <a class="links" target="_blank" href="https://www.inet.se/kategori/31/datorkomponenter">Inet.se</a>
+    <a class="links" target="_blank" href="https://www.netonnet.se/art/datorkomponenter">NetOnNet.se</a>
+    <a class="links" target="_blank" href="https://www.komplett.se/department/10000/datorutrustning">Komplett.se</a>
+    <a class="links" target="_blank" href="https://www.computersalg.se/sub/1468/datorkomponenter">ComputerSalg.se</a>
+    <a class="links" target="_blank" href="https://www.webhallen.com/se/section/8-Datorkomponenter">Webhallen.se</a>
+    <a class="links" target="_blank" href="https://www.elgiganten.se">ElGiganten.se</a>
+    <a class="links" target="_blank" href="https://www.mediamarkt.se/sv/category/_datortillbehör-422026.html">MediaMarkt.se</a>
+  </div>
+  
+  <div>
+
+  </div>
+    <form class="example" action="/action_page.php">
+    <input type="text" placeholder="SEK... t.ex. 30000" name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <img class="img" src="pclogo.png" alt="">
+</body>
+</html>
